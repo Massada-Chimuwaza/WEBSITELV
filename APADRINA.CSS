@@ -1,0 +1,289 @@
+/* Estilos base */
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f3fdf5;
+  color: #1b4332;
+}
+
+/* Cabeçalho e logo */
+header {
+  background-color: #2d6a4f;
+  color: white;
+  padding: 20px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
+}
+
+header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 110%;
+}
+
+/* Navegação */
+nav {
+  background-color: #40916c;
+  text-align: left;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 15px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #2d6a4f;
+}
+
+/* Seções */
+section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+h2 {
+  color: #2d6a4f;
+  margin-bottom: 30px;
+}
+
+/* Beneficiários */
+.beneficiarios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.beneficiario {
+  background-color: #fff;
+  border: 2px solid #b7e4c7;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.beneficiario:hover {
+  transform: translateY(-5px);
+}
+
+.beneficiario img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.beneficiario h3 {
+  color: #1b4332;
+  margin-bottom: 5px;
+}
+
+.beneficiario p {
+  font-size: 0.9em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.beneficiario button {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.beneficiario button:hover {
+  background-color: #40916c;
+}
+
+/* Contato */
+.contato-info {
+  display: inline-block;
+  background: #fff;
+  border: 2px solid #b7e4c7;
+  border-radius: 10px;
+  padding: 25px 40px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  line-height: 1.7;
+}
+
+/* ---------- TESTEMUNHOS ---------- */
+#testemunhos {
+  background-color: #f3fdf5;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#testemunhos h2 {
+  color: #2d6a4f;
+  margin-bottom: 10px;
+}
+
+#testemunhos .intro {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.testemunhos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testemunho {
+  background-color: #fff;
+  border: 2px solid #b7e4c7;
+  border-radius: 10px;
+  width: 280px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.testemunho:hover {
+  transform: translateY(-5px);
+}
+
+.testemunho img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.testemunho h3 {
+  color: #1b4332;
+  margin-bottom: 10px;
+}
+
+.testemunho p {
+  font-style: italic;
+  color: #333;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* ---------- AÇÕES REALIZADAS ---------- */
+#accoes {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#accoes h2 {
+  color: #2d6a4f;
+  margin-bottom: 10px;
+}
+
+#accoes .intro {
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.accoes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.accao {
+  background-color: #fff;
+  border: 2px solid #b7e4c7;
+  border-radius: 10px;
+  width: 320px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.accao:hover {
+  transform: translateY(-5px);
+}
+
+.accao img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.accao h3 {
+  color: #1b4332;
+  margin-bottom: 10px;
+}
+
+.accao p {
+  color: #333;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* ---------- RESPONSIVO ---------- */
+@media (max-width: 768px) {
+  .testemunhos-container,
+  .accoes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testemunho, .accao {
+    width: 90%;
+  }
+}
+
+/* Rodapé */
+footer {
+  background-color: #2d6a4f;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.parceiros-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.parceiro img {
+  width: 120px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-info {
+  font-size: 0.9em;
+  color: #cce3d2;
+  border-top: 1px solid #40916c;
+  padding-top: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header .logo {
+    flex-direction: column;
+  }
+
+  .beneficiario {
+    width: 80%;
+  }
+}

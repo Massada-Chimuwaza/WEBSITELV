@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria - Associação Luz Verde</title>
+  <link rel="stylesheet" href="GALERIA.CSS">
+</head>
+<body>
+  <header>
+    <h1>Galeria de Fotografias</h1>
+    <p>Momentos de solidariedade, amor e transformação da Associação Luz Verde</p>
+  </header>
+
+  <main>
+    <!-- Contêiner da galeria -->
+    <div class="galeria-container" id="galeria"></div>
+  </main>
+
+  <!-- Lightbox (pop-up da imagem) -->
+  <div class="lightbox" id="lightbox">
+    <span class="fechar" id="fechar">&times;</span>
+    <img id="lightbox-img" src="gal/Foto1.jpg" alt="Foto Ampliada">
+    <div class="navegacao">
+      <span id="prev">&#1;</span>
+      <span id="next">&#2;</span>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Associação Luz Verde – Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

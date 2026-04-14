@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Associação Luz Verde</title>
+  <link rel="stylesheet" href="LUZVERDE.css">
+  <!-- Lightbox -->
+<div id="lightbox">
+  <span id="fechar">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const fechar = document.getElementById('fechar');
+
+  // abrir o lightbox
+  document.querySelectorAll('.galeria-container img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  // fechar o lightbox
+  fechar.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  // clicar fora da imagem fecha também
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="logo.svg" alt="Logotipo da Associação Luz Verde" class="logotipo">
+      <h1>Associação Luz Verde</h1>
+     </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#aderir">Aderir</a></li>
+        <li><a href="#contactos">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="inicio">
+  <div class="inicio-conteudo">
+
+    <p class="descricao">
+      A <strong>Luz Verde</strong> é uma associação de solidariedade que se dedica a irradiar a esperança, através do apoio social e moral a crianças órfãs e vulneráveis, adolescentes e jovens vulneráveis.
+    </p>
+
+    <div class="dados">
+      <p><strong>Ano de fundação:</strong> 2009</p>
+      <p><strong>Data de oficialização:</strong> 12.12.2012</p>
+      <p><strong>Áreas de atuação:</strong> Educação, Saúde e Nutrição</p>
+      <p><strong>Local de atuação:</strong> Província de Maputo</p>
+    </div>
+
+    <div class="objetivo">
+      <h2>Objectivo</h2>
+      <p>Colaborar na construção duma sociedade baseada no respeito, na igualdade social e no bem‑estar de todas as pessoas.</p>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>A Luz Verde é uma associação de solidariedade que se dedica a irradiar a esperança, através do apoio social e moral a crianças órfãs, adolescentes e jovens vulneráveis.</p> 
+<section class="sobre">
+  <h2>Missão, Visão e Valores</h2>
+  <div class="info-container">
+    <div class="info">
+      <h3>Missão</h3>
+      <p>Apoiar pessoas e famílias desfavorecidas, crianças vulneráveis e aumentar a capacidade de resposta perante as suas necessidades.</p>
+    </div>
+    <div class="info">
+      <h3>Visão</h3>
+      <p>Construir uma sociedade fundada no respeito pela dignidade das pessoas, especialmente as mais desfavorecidas.</p>
+    </div>
+    <div class="info">
+      <h3>Valores</h3>
+      <p>Humildade, respeito mútuo, serviço, honestidade, voluntariado, profissionalismo e solidariedade.</p>
+    </div>
+  </div>
+</section>
+</section>
+
+<section class="projetos">
+  <h2>Nossos Projetos</h2>
+  <div class="projetos-container">
+
+    <div class="projeto">
+      <a href="projetos/apadrinhar-salvar.html">
+        <img src="foto3.jpg" alt="Apadrinhar e Salvar">
+      </a>
+      <h3><a href="projetos/apadrinhar-salvar.html">Apadrinhar e Salvar</a></h3>
+      <p>Projeto voltado para oferecer apoio educacional e social a crianças e adolescentes em situação de vulnerabilidade, promovendo oportunidades e esperança para o futuro.</p>
+      <a href="projetos/apadrinhar-salvar.html" class="btn-saiba-mais">Saiba mais</a>
+    </div>
+
+    <div class="projeto">
+      <a href="projetos/rapariga-fort.html">
+        <img src="foto7.jpg" alt="Rapariga FOR‑T">
+      </a>
+      <h3><a href="projetos/rapariga-fort.html">Rapariga FOR‑T</a></h3>
+      <p>Iniciativa que empodera jovens raparigas por meio de formação, orientação e fortalecimento emocional, valorizando o protagonismo feminino na comunidade.</p>
+      <a href="projetos/rapariga-fort.html" class="btn-saiba-mais">Saiba mais</a>
+    </div>
+
+    <div class="projeto">
+      <a href="projetos/ku-dondza.html">
+        <img src="foto4.jpg" alt="Ku Dondza">
+      </a>
+      <h3><a href="projetos/ku-dondza.html">Ku Dondza</a></h3>
+      <p>Programa de apoio ao desenvolvimento sustentável das famílias, com foco em educação, nutrição e inclusão econômica nas zonas comunitárias.</p>
+      <a href="projetos/ku-dondza.html" class="btn-saiba-mais">Saiba mais</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="eventos">
+  <h2>Eventos da Luz Verde</h2>
+  <div class="eventos-container">
+
+    <div class="evento">
+      <h3>Natal Solidário</h3>
+      <p>Celebramos o espírito natalino levando alegria, alimentos e presentes a crianças e famílias em situação de vulnerabilidade.</p>
+      <span class="data">Dezembro de cada ano</span>
+      <a href="eventos/natal-solidario.html" class="btn-saiba-mais">Saiba mais</a>
+    </div>
+
+    <div class="evento">
+      <h3>Mês da Criança</h3>
+      <p>Atividades lúdicas, educativas e culturais dedicadas às crianças, promovendo o direito à infância feliz e saudável.</p>
+      <span class="data">Junho</span>
+      <a href="eventos/mes-da-crianca.html" class="btn-saiba-mais">Saiba mais</a>
+    </div>
+
+    <div class="evento">
+      <h3>Outros Eventos</h3>
+      <p>Ao longo do ano realizamos campanhas de saúde, oficinas de capacitação, e encontros comunitários para promover solidariedade e inclusão.</p>
+      <span class="data">Durante o ano</span>
+      <a href="eventos/outros-eventos.html" class="btn-saiba-mais">Saiba mais</a>
+    </div>
+
+  </div>
+
+<section id="galeria">
+  <h2>Galeria Luz Verde</h2>
+  <p>Veja alguns momentos marcantes dos nossos projetos e eventos. 
+    <a href="imagens/" target="_blank"><strong>Abrir pasta completa de imagens</strong></a>
+  </p>
+
+  <div class="galeria-container">
+    <div class="foto"><img src="foto5.jpg" alt="Ação comunitária Luz Verde"></div>
+    <div class="foto"><img src="foto6.jpg" alt="Projeto Apadrinhar e Salvar"></div>
+    <div class="foto"><img src="foto3.jpg" alt="Evento Mês da Criança"></div>
+    <div class="foto"><img src="foto4.jpg" alt="Formação Rapariga FOR‑T"></div>
+    <div class="foto"><img src="Foto2.jpg" alt="Distribuição de alimentos"></div>
+    <div class="foto"><img src="Foto1.jpg" alt="Equipa Luz Verde em ação"></div>
+    <div class="foto"><img src="Foto2.jpg" alt="Distribuição de alimentos"></div>
+    <div class="foto"><img src="Foto1.jpg" alt="Equipa Luz Verde em ação"></div>
+
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <span id="fechar">&times;</span>
+  <span id="prev">&#10094;</span>
+  <img id="lightbox-img" src="" alt="">
+  <span id="next">&#10095;</span>
+</div>
+
+ <section id="aderir">
+  <h2>Aderir</h2>
+  <p>Quer fazer parte desta causa? Torne-se padrinho, voluntário ou parceiro da Associação Luz Verde.</p>
+  <!-- Botão que leva ao formulário -->
+  <button class="botao-aderir" onclick="document.getElementById('form-aderir').scrollIntoView({behavior:'smooth'})">
+    Quero Aderir
+  </button>
+</section>
+
+<!-- Formulário de adesão -->
+<section id="form-aderir" style="margin-top: 50px;">
+  <h3>Formulário de Adesão</h3>
+  <form action="enviar_formulario.php" method="post">
+    <label for="nome">Nome Completo:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="telefone">Telefone:</label><br>
+    <input type="tel" id="telefone" name="telefone"><br><br>
+
+    <label>Como pretende aderir?</label><br>
+    <input type="radio" id="membro" name="tipo" value="Membro" required>
+    <label for="membro">Membro</label><br>
+
+    <input type="radio" id="simpatizante" name="tipo" value="Simpatizante">
+    <label for="simpatizante">Simpatizante</label><br>
+
+    <input type="radio" id="doador" name="tipo" value="Doador">
+    <label for="doador">Doador</label><br>
+
+    <input type="radio" id="parceiro" name="tipo" value="Parceiro">
+    <label for="parceiro">Parceiro</label><br>
+
+    <input type="radio" id="voluntario" name="tipo" value="Voluntário">
+    <label for="voluntario">Voluntário</label><br><br>
+
+    <label for="mensagem">Mensagem (opcional):</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4"></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- Adicione isto dentro da tag <head> do seu HTML -->
+<link rel="stylesheet" href="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css)">
+
+<section id="contactos">
+  <h2>Contactos</h2>
+  <p>Entre em contacto connosco pelos nossos canais.</p>
+     
+  <div class="contacto-info">
+    <p>
+      <i class="fa-solid fa-envelope"></i>
+      <strong>Email:</strong> 
+      <a href="luzverde10@gmail.com" target="_blank">luzverde10@gmail.com</a>
+    </p>
+    
+    <p>
+      <i class="fa-brands fa-whatsapp"></i>
+      <strong>WhatsApp:</strong> 
+      <a href="https://wa.me/258846605892" target="_blank">+258 846 605 892</a>
+    </p>
+    
+    <p>
+      <i class="fa-solid fa-location-dot"></i>
+      <strong>Endereço:</strong> Maputo, Moçambique
+    </p>
+    
+    <p>
+      <i class="fa-brands fa-facebook"></i>
+      <strong>Facebook:</strong> 
+      <a href="https://www.facebook.com/familialuzverde" target="_blank">facebook.com/familialuzverde</a>
+    </p>
+  </div>
+</section>
+
+  <footer>
+  <p>&copy; <span id="ano"></span> Associação Luz Verde — Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
